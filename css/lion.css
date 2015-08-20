@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    background: #ededed;
+}
+
+.load-sn-logo {
+    font-size: 100px;
+    position: relative;
+    width: 6.4em;
+    height: 6.4em;
+    margin: 0 auto;
+}
+
+.load-sn-logo .load-block,
+.load-sn-logo .block-l,
+.load-sn-logo .block-r {
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+
+.load-sn-logo .load-block {
+    top: 2.2em;
+    left: 2.2em;
+    -webkit-animation: ani-load-block 4s ease-out infinite;
+    animation: ani-load-block 4s ease-out infinite;
+}
+
+.load-sn-logo .block-l,
+.load-sn-logo .block-r {
+    border-radius: 10%;
+    background: #f3b500;
+}
+
+.load-sn-logo .block-l {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.load-sn-logo .block-r {
+    right: 0;
+}
+
+.load-sn-logo .lion-face {
+    position: absolute;
+    z-index: 10;
+    top: 2.95em;
+    left: 2.5em;
+    width: 1.4em;
+    height: 1em;
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+
+.load-sn-logo .lion-eye-l,
+.load-sn-logo .lion-eye-r {
+    position: absolute;
+    top: 0;
+    width: .2em;
+    height: .2em;
+    border-radius: 50%;
+    background: #221916;
+}
+
+.load-sn-logo .lion-eye-l {
+    left: .24em;
+}
+
+.load-sn-logo .lion-eye-r {
+    right: .24em;
+}
+
+.load-sn-logo .lion-nose-w {
+    position: absolute;
+    top: .1em;
+    left: .375em;
+    width: .65em;
+    height: .65em;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.load-sn-logo .lion-nose-b {
+    position: absolute;
+    z-index: 20;
+    top: .4em;
+    left: .425em;
+    width: .55em;
+    height: .25em;
+    border-radius: 10% 10% 50% 50% / 20% 20% 80% 80%;
+    background: #221916;
+}
+
+.load-sn-logo .lion-mouth {
+    position: absolute;
+    top: .425em;
+    left: .075em;
+    width: 1.25em;
+    height: .5em;
+    border-radius: .25em;
+    background: #fff;
+}
+
+@-webkit-keyframes ani-load-block {
+    0%,
+    10%,
+    100% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    50%,
+    60% {
+        -webkit-transform: rotate(270deg);
+        transform: rotate(270deg);
+    }
+}
+
+@keyframes ani-load-block {
+    0%,
+    10%,
+    100% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    50%,
+    60% {
+        -webkit-transform: rotate(270deg);
+        transform: rotate(270deg);
+    }
+}
