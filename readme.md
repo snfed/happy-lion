@@ -1,18 +1,41 @@
 # Happy Lion
-（其实只是这个人不会英语而已）
 
-### 这里都有啥？
-在一个寂寞的七夕，某位孤独的少折腾出了这样一个毫无意义的东西。  
-然后他还不知羞耻的上传了 T_T  
+客官看这里，空调打折啦 >w<  
+http://banrikun.github.io/happy-lion/
 
-### 动画列表
-#### 分解的小狮子
-http://banrikun.github.io/happy-lion/base.html
+## 这尼玛是啥？
 
-#### 旋转的小狮子
-http://banrikun.github.io/happy-lion/spin.html
+Happy Lion 是一个卖萌的 CSS3 动效库，原型为苏宁易购的吉祥物小狮子。  
+虽然暂时并没有什么卵用，但还是期待群众们一起来完善……
 
-#### 还没完成的小狮子（→_→）
-http://banrikun.github.io/happy-lion/eye.html
+## 做个约定吧！
 
-未完待续……
+Happy Lion 采用 Sass 编写，其中 `_base.scss` 存放了基础的样式，而特效则存放于单独的 `_*.scss` 文件。如此便可以在 `style.scss` 中 `@import` 指定的特效，实现按需编译。
+
+同时，我们约定将 `happy-lion` 和 `lion-*` 作为保留关键词。除此之外，建议您使用 `hl-特效名-*` 的方式命名，避免样式冲突。
+
+## 各部件名称：
+
+`.happy-lion::before`  
+
+头：外部圆角矩形 （正）
+
+`.happy-lion::after`
+
+头：外部圆角矩形 （斜）
+
+`.lion-face`  
+
+脸：包含眼、鼻、嘴，主体为白色圆角矩形（嘴）
+
+`.lion-face::before`
+
+眼：黑色圆 （左）
+
+`.lion-face::after`
+
+眼：黑色圆 （右）
+
+`.lion-nose`
+
+鼻：由于形状特殊，这里使用了图形遮盖，故不建议拆分
