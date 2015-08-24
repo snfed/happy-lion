@@ -1,0 +1,32 @@
+.hl-spin {
+    &::before {
+        animation: hl-spin-l 4s ease-out infinite;
+    }
+    &::after {
+        animation: hl-spin-r 4s ease-out infinite;
+    }
+}
+
+@keyframes hl-spin-l {
+    0%,
+    10%,
+    100% {
+        transform: rotate(0);
+    }
+    50%,
+    60% {
+        transform: rotate(270deg);
+    }
+}
+
+@keyframes hl-spin-r {
+    0%,
+    10%,
+    100% {
+        transform: rotate(45deg);
+    }
+    50%,
+    60% {
+        transform: rotate(315deg);
+    }
+}

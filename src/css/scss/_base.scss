@@ -1,0 +1,92 @@
+// pseudo elements
+@mixin pe {
+    position: absolute;
+    display: block;
+    content: '';
+}
+
+// happy lion base style
+.happy-lion {
+    font-size: 50px;
+    position: relative;
+    width: 5em;
+    height: 5em;
+    margin: 10rem auto;
+    &::before,
+    &::after {
+        z-index: 5;
+        top: 0;
+        left: 0;
+        width: 5em;
+        height: 5em;
+        border-radius: 11.5%;
+        background: #f6b300;
+
+        @include pe;
+    }
+    &::after {
+        transform: rotate(45deg);
+    }
+}
+
+.lion-face {
+    position: absolute;
+    z-index: 10;
+    top: 2.96em;
+    left: .79em;
+    width: 3.42em;
+    height: 1.52em;
+    border-radius: .76em;
+    background: #fff;
+    &::before,
+    &::after {
+        top: -1.14em;
+        width: .49em;
+        height: .49em;
+        border-radius: 50%;
+        background: #000;
+
+        @include pe;
+    }
+    &::before {
+        left: .44em;
+    }
+    &::after {
+        right: .44em;
+    }
+}
+
+.lion-nose {
+    position: absolute;
+    z-index: 15;
+    top: -.86em;
+    left: .73em;
+    width: 1.96em;
+    height: 1.96em;
+    border-radius: 50%;
+    background: #fff;
+    &::before {
+        z-index: 25;
+        top: .84em;
+        left: .25em;
+        width: 1.46em;
+        height: .26em;
+        border-radius: .13em;
+        background: #000;
+        box-shadow: 0 -.3em 0 .15em #fff;
+
+        @include pe;
+    }
+    &::after {
+        z-index: 20;
+        top: .49em;
+        left: .47em;
+        width: 1.02em;
+        height: 1em;
+        transform: rotate(-38deg) skewX(16deg);
+        border-radius: 20% 28% / 20% 28%;
+        background: #000;
+
+        @include pe;
+    }
+}

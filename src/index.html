@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Happy Lion</title>
+
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="happy-lion" id="lion">
+        <div class="lion-face">
+            <div class="lion-nose"></div>
+        </div>
+    </div>
+
+    <div class="btn-wrap" id="btn">
+        <button>fly</button>
+        <button>spin</button>
+        <button>eye</button>
+    </div>
+
+    <script>
+        window.addEventListener('load', function() {
+            var btn = document.getElementById('btn');
+            btn.addEventListener('click', function(event) {
+                var target = event.target;
+                if (target.tagName === "BUTTON") {
+                    var lion = document.getElementById('lion'),
+                        lionName = target.innerHTML;
+                    lion.className = 'happy-lion hl-' + lionName;
+                }
+            })
+        })
+    </script>
+</body>
+</html>
