@@ -11,11 +11,13 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Happy Lion Start -->
     <div class="happy-lion" id="lion">
         <div class="lion-face">
             <div class="lion-nose"></div>
         </div>
     </div>
+    <!-- Happy Lion End -->
 
     <div class="btn-wrap" id="btn">
         <button>fly</button>
@@ -25,15 +27,20 @@
 
     <script>
         window.addEventListener('load', function() {
-            var btn = document.getElementById('btn');
+            var lion = document.getElementById('lion'),
+                btn = document.getElementById('btn'),
+                url = location.hash.substring(1);
             btn.addEventListener('click', function(event) {
                 var target = event.target;
                 if (target.tagName === "BUTTON") {
-                    var lion = document.getElementById('lion'),
-                        lionName = target.innerHTML;
+                    var lionName = target.innerHTML;
                     lion.className = 'happy-lion hl-' + lionName;
+                    location.hash = "#" + lionName;
                 }
             })
+            if (url !== '') {
+                lion.className = 'happy-lion hl-' + url;
+            }
         })
     </script>
 </body>
