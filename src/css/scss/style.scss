@@ -16,21 +16,19 @@ button {
     width: 500px;
     margin: 0 auto;
     text-align: center;
-}
-
-.btn-wrap button {
-    font-size: 20px;
-    display: inline-block;
-    width: 100px;
-    margin: 5px;
-    padding: 5px;
-    cursor: pointer;
-    color: #fff;
-    border: 0 none;
-    outline: 0 none;
-    background: #666;
-}
-
-.btn-wrap button:hover {
-    background: #333;
+    button {
+        font-size: 20px;
+        display: inline-block;
+        width: 100px;
+        margin: 5px;
+        padding: 5px;
+        cursor: pointer;
+        color: #fff;
+        border: 0 none;
+        outline: 0 none;
+        background: #666;
+        &:hover {
+            background: #333;
+        }
+    }
 }
