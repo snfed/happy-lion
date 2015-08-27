@@ -1,15 +1,20 @@
-@import 'base', 'fly', 'spin', 'eye';
-
-body {
-    margin: 0;
-    background: #ededed;
-}
+@import 'base', 'fly', 'spin', 'eye', 'smile';
 
 body,
 button {
     font-family: 'Source Sans Pro', 'Helvetica Neue', 'Hiragino Sans GB', 'Microsoft Yahei', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    margin: 0;
+    background: #ededed;
+}
+
+.happy-lion {
+    font-size: 50px;
+    margin: 150px auto;
 }
 
 .btn-wrap {

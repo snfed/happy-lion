@@ -1,0 +1,67 @@
+.hl-smile {
+    .lion-face {
+        &::before,
+        &::after {
+            display: none;
+        }
+    }
+    .hl-smile-l,
+    .hl-smile-r {
+        position: absolute;
+        z-index: 30;
+        top: -1.2em;
+        width: .9em;
+        height: .9em;
+        border-radius: 50%;
+        background-image: linear-gradient(to top, #f6b300 .45em, #000 .45em);
+        &::before {
+            top: .23em;
+            left: .23em;
+            width: .44em;
+            height: .44em;
+            border-radius: 50%;
+            background: #f6b300;
+
+            @include pe;
+        }
+        &::after {
+            top: .35em;
+            width: .23em;
+            height: .23em;
+            border-radius: 50%;
+            background: #000;
+            box-shadow: .67em 0 0 0 #000;
+
+            @include pe;
+        }
+    }
+    .hl-smile-r {
+        right: 0;
+    }
+    &::before {
+        animation: hl-smile-l 2.5s ease-out infinite;
+    }
+    &::after {
+        animation: hl-smile-r 2.5s ease-out infinite;
+    }
+}
+
+@keyframes hl-smile-l {
+    0%,
+    20% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes hl-smile-r {
+    0%,
+    20% {
+        transform: rotate(45deg);
+    }
+    100% {
+        transform: rotate(405deg);
+    }
+}
