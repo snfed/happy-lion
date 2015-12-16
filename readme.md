@@ -1,7 +1,7 @@
 # Happy Lion
 
 客官看这里，空调打折啦 >w<  
-http://banrikun.github.io/happy-lion/
+http://banricho.github.io/happy-lion/
 
 ## 这尼玛是啥？
 
