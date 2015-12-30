@@ -1,7 +1,7 @@
 # Happy Lion
 
 客官看这里，空调打折啦 >w<  
-http://banricho.github.io/happy-lion/
+http://banricho.github.io/Happy-Lion/
 
 ## 这尼玛是啥？
 
@@ -14,7 +14,7 @@ Happy Lion 是一个卖萌的 CSS3 动画库，原型为苏宁易购的吉祥物
 
 第一步：添加基础的 HTML 结构
 
-```
+```HTML
 <!-- Happy Lion Start -->
 <div class="happy-lion">
     <div class="lion-face">
@@ -26,11 +26,8 @@ Happy Lion 是一个卖萌的 CSS3 动画库，原型为苏宁易购的吉祥物
 
 第二步：引入 CSS 文件，添加需要的特效
 
-```
-...
+```HTML
 <div class="happy-lion hl-fly">
-...
-
 ```
 
 ### 如何拓展？
@@ -38,7 +35,7 @@ Happy Lion 是一个卖萌的 CSS3 动画库，原型为苏宁易购的吉祥物
 为了减少标签嵌套，Happy Lion 使用了大量的伪元素，尽管如此，我们依然可以使用 CSS3 强大的属性制作多样的动态效果。如果您觉得现有的 HTML 标签无法满足需求，则可以添加新的标签，例如：
 
 
-```
+```HTML
 <!-- Happy Lion Start -->
 <div class="happy-lion">
     <div class="lion-face">
